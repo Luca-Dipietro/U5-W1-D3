@@ -26,7 +26,9 @@ public class MyRunner implements CommandLineRunner {
         Drink water = (Drink) ctx.getBean("getWater");
         Drink lemonade = (Drink) ctx.getBean("getLemonade");
 
-        Order order1 = new Order(1, table1, Arrays.asList(margheritaPizza,salamiPizza,hawaiianPizza,water,lemonade), OrderStatus.SERVED,5, (Double) ctx.getBean("getCoverCharge"));
+        Double coverCharge = (Double) ctx.getBean("getCoverCharge");
+
+        Order order1 = new Order(1, table1, Arrays.asList(margheritaPizza,salamiPizza,hawaiianPizza,water,lemonade), OrderStatus.SERVED,5, coverCharge);
 
         System.out.println("Menu");
         System.out.println(menu);
