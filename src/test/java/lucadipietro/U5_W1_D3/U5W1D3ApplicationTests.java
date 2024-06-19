@@ -1,10 +1,10 @@
-package lucadipietro.U5_W1_D2;
+package lucadipietro.U5_W1_D3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class U5W1D2ApplicationTests {
+class U5W1D3ApplicationTests {
 
 	@Test
 	void contextLoads() {

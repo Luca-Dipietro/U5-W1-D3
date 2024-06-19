@@ -1,9 +1,9 @@
-package lucadipietro.U5_W1_D2;
+package lucadipietro.U5_W1_D3;
 
-import lombok.Value;
-import lucadipietro.U5_W1_D2.entities.*;
-import lucadipietro.U5_W1_D2.enums.PizzaType;
-import lucadipietro.U5_W1_D2.enums.TableStatus;
+import lucadipietro.U5_W1_D3.entities.*;
+import lucadipietro.U5_W1_D3.enums.PizzaType;
+import lucadipietro.U5_W1_D3.enums.TableStatus;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

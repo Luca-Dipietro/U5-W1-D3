@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>lucadipietro</groupId>
-	<artifactId>U5-W1-D2</artifactId>
+	<artifactId>U5-W1-D3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>U5-W1-D2</name>
-	<description>Second Spring Boot Project</description>
+	<name>U5-W1-D3</name>
+	<description>Third Spring Boot Project</description>
 	<url/>
 	<licenses>
 		<license/>

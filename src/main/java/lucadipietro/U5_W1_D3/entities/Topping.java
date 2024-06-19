@@ -1,18 +1,18 @@
-package lucadipietro.U5_W1_D2.entities;
+package lucadipietro.U5_W1_D3.entities;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class Drink extends MenuElement {
-    public Drink(String name, int calories, double price) {
+public class Topping extends MenuElement{
+    public Topping(String name, int calories, double price) {
         super(name, calories, price);
     }
 
     @Override
     public String toString() {
-        return "Drink{" +
+        return "Topping{" +
                 "name='" + getName() + '\'' +
                 ", price=" + getPrice() +
                 ", calories=" + getCalories() +

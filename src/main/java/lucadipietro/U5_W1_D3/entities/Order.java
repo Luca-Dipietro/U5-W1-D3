@@ -1,10 +1,7 @@
-package lucadipietro.U5_W1_D2.entities;
+package lucadipietro.U5_W1_D3.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import lucadipietro.U5_W1_D2.enums.OrderStatus;
+import lombok.*;
+import lucadipietro.U5_W1_D3.enums.OrderStatus;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -17,6 +14,7 @@ public class Order {
     private List<MenuElement> menuElements;
     private OrderStatus orderStatus;
     private int numSeats;
+    private double coverCharge;
     private LocalDate orderTime;
     private double totalCost;
 
@@ -26,11 +24,12 @@ public class Order {
         this.menuElements = menuElements;
         this.orderStatus = orderStatus;
         this.numSeats = numSeats;
+        this.coverCharge = coverCharge;
         this.orderTime = LocalDate.now();
-        this.totalCost = calculateTotalCost(coverCharge);
+        this.totalCost = calculateTotalCost();
     }
 
-    private double calculateTotalCost(double coverCharge) {
+    private double calculateTotalCost() {
         double cost = numSeats * coverCharge;
         for (MenuElement element : menuElements) {
             cost += element.getPrice();
@@ -47,7 +46,6 @@ public class Order {
                 ", orderStatus=" + orderStatus +
                 ", numSeats=" + numSeats +
                 ", orderTime=" + orderTime +
-                ", totalCost=" + totalCost +
                 '}';
     }
 }

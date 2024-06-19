@@ -1,8 +1,8 @@
-package lucadipietro.U5_W1_D2.entities;
+package lucadipietro.U5_W1_D3.entities;
 
 import lombok.Getter;
 import lombok.Setter;
-import lucadipietro.U5_W1_D2.enums.PizzaType;
+import lucadipietro.U5_W1_D3.enums.PizzaType;
 import java.util.List;
 
 @Getter
