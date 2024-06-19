@@ -24,6 +24,7 @@ class U5W1D3ApplicationTests {
 		assertEquals("Water",drink.getName());
 		assertEquals(0,drink.getCalories());
 		assertEquals(1.29,drink.getPrice());
+		System.out.println(drink);
 	}
 
 	@Test
@@ -38,6 +39,7 @@ class U5W1D3ApplicationTests {
 		assertEquals(6.99,pizza.getPrice());
 		assertEquals(Arrays.asList(salamePiccante,tomato,mozzarella),pizza.getToppings());
 		assertEquals(PizzaType.REGULAR,pizza.getSize());
+		System.out.println(pizza);
 	}
 
 	@ParameterizedTest
@@ -52,6 +54,7 @@ class U5W1D3ApplicationTests {
 		Drink drink = new Drink("Water",0,drinkPrice);
 		Order order = new Order(orderNumber,table,Arrays.asList(pizza,drink), OrderStatus.READY,numSeats,coverCharge);
         assertEquals(expectedTotal,order.getTotalCost());
+		System.out.println("Il conto aspettato è: " + expectedTotal+ ", il conto totale è: " + order.getTotalCost());
 	}
 
 	@BeforeAll
