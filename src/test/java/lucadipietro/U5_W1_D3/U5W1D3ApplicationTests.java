@@ -43,9 +43,9 @@ class U5W1D3ApplicationTests {
 	}
 
 	@ParameterizedTest
-	@CsvSource({"1,4,7.5,3.5,2.5,21","2,2,5.5,3.5,1.5,12"})
-	void calculateTotalCost(int orderNumber, int numSeats, double pizzaPrice, double drinkPrice, double coverCharge, double expectedTotal){
-		System.out.println("Test per verificare il calcolo del costo totale");
+	@CsvSource({"1,1,7.5,3.5,2.5,13.5","2,1,5.5,3.5,1.5,10.5"})
+	void calculateTotalCostOneClient(int orderNumber, int numSeats, double pizzaPrice, double drinkPrice, double coverCharge, double expectedTotal){
+		System.out.println("Test per verificare il calcolo del costo totale con un solo cliente");
 		Table table = new Table(1,5, TableStatus.BUSY);
 		Topping salamePiccante = new Topping("Salame Piccante",34,3.99);
 		Topping tomato = new Topping("Pomodoro",0,2.99);
